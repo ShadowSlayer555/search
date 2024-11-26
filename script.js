@@ -21,7 +21,14 @@ function sendMessage() {
 function displayMessage(message, className) {
   const messageElement = document.createElement("div");
   messageElement.className = `message ${className}`;
-  messageElement.textContent = message;
+
+  // Use innerHTML for bot messages to enable clickable links
+  if (className === "bot-message") {
+    messageElement.innerHTML = message;
+  } else {
+    messageElement.textContent = message;
+  }
+
   chatBox.appendChild(messageElement);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
