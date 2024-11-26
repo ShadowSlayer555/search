@@ -24,13 +24,13 @@ function displayMessage(message, className) {
 
   // Use innerHTML for bot messages to enable clickable links
   if (className === "bot-message") {
-    messageElement.innerHTML = message;
+    messageElement.innerHTML = message; // Correctly renders HTML
   } else {
-    messageElement.textContent = message;
+    messageElement.textContent = message; // Escapes HTML for user messages
   }
 
   chatBox.appendChild(messageElement);
-  chatBox.scrollTop = chatBox.scrollHeight;
+  chatBox.scrollTop = chatBox.scrollHeight; // Auto-scrolls to the newest message
 }
 
 function getBotResponse(input) {
