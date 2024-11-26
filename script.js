@@ -73,13 +73,13 @@ const contentMap = {
   "elemental wands": "Download 'Elemental Wands': <a href='content/ElementalWands.zip' target='_blank'>Click here</a>",
   "ender awakening": "Download 'Ender Awakening': <a href='content/EnderAwakening.zip' target='_blank'>Click here</a>",
   "mob vote losers": "Download 'Mob Vote Losers': <a href='content/MobVoteLosers.mcaddon' target='_blank'>Click here</a>",
-  "shadows classic": "Download 'Shadows Classic and Slim Skins': <a href='content/ShadowsClasicAndSlimCompilationSkins.zip' target='_blank'>Click here</a>",
+  "skins": "Download 'Shadows Classic and Slim Skins': <a href='content/ShadowsClasicAndSlimCompilationSkins.zip' target='_blank'>Click here</a> 'Shadows Skins': <a href='content/ShadowsSkins.zip' target='_blank'>Click here</a>",
   "shadows resources": "Download 'Shadows Resources': <a href='content/ShadowsResources.zip' target='_blank'>Click here</a>",
-  "shadows skins": "Download 'Shadows Skins': <a href='content/ShadowsSkins.zip' target='_blank'>Click here</a>",
   "spry conquest": "Download 'Spry Conquest': <a href='content/SpryConquest.mcaddon' target='_blank'>Click here</a>",
   "tnt gun": "Download 'TNT Gun': <a href='content/TntGun.mcaddon' target='_blank'>Click here</a>",
   "true weapons": "Download 'True Weapons': <a href='content/TrueWeapons.zip' target='_blank'>Click here</a>",
-  "camouflage skin": "Download 'Camouflage Skin Pack': <a href='content/camouflage-skin-pack.mcpack' target='_blank'>Click here</a>"
+  "camo": "Download 'Camouflage Skin Pack': <a href='content/camouflage-skin-pack.mcpack' target='_blank'>Click here</a>",
+  "mods": "Here are some options: 'A Magic Way': <a href='content/AMagicWay.zip' target='_blank'>Click here</a> 'Actual Guns 3D': <a href='content/ActualGuns_3D_1.8.1.mcaddon' target='_blank'>Click here</a> Download 'Baby Ender Dragon': <a href='content/BabyEnderDragon.mcaddon' target='_blank'>Click here</a> Download 'Elemental Wands': <a href='content/ElementalWands.zip' target='_blank'>Click here</a> Download 'Mob Vote Losers': <a href='content/MobVoteLosers.mcaddon' target='_blank'>Click here</a> 'Spry Conquest': <a href='content/SpryConquest.mcaddon' target='_blank'>Click here</a> 'TNT Gun': <a href='content/TntGun.mcaddon' target='_blank'>Click here</a> 'True Weapons': <a href='content/TrueWeapons.zip' target='_blank'>Click here</a>,
 };
 
 function getBotResponse(input) {
