@@ -62,7 +62,6 @@ function levenshteinDistance(a, b) {
   return matrix[b.length][a.length];
 }
 
-// Content map for matching
 const contentMap = {
   "magic way": "<a href='content/AMagicWay.zip' target='_blank'>Download 'A Magic Way'</a>",
   "guns": "<a href='content/ActualGuns_3D_1.8.1.mcaddon' target='_blank'>Download 'Actual Guns 3D'</a>",
@@ -70,13 +69,17 @@ const contentMap = {
   "elemental wands": "<a href='content/ElementalWands.zip' target='_blank'>Download 'Elemental Wands'</a>",
   "ender awakening": "<a href='content/EnderAwakening.zip' target='_blank'>Download 'Ender Awakening'</a>",
   "mob vote losers": "<a href='content/MobVoteLosers.mcaddon' target='_blank'>Download 'Mob Vote Losers'</a>",
-  "shadows classic skins": "<a href='content/ShadowsClasicAndSlimCompilationSkins.zip' target='_blank'>Download 'Shadows Classic and Slim Skins'</a>",
-  "shadows resources": "<a href='content/ShadowsResources.zip' target='_blank'>Download 'Shadows Resources'</a>",
-  "shadows skins": "<a href='content/ShadowsSkins.zip' target='_blank'>Download 'Shadows Skins'</a>",
+  "skins": `
+    <p>Here are some skin packs you can try:</p>
+    <ul>
+      <li><a href='content/ShadowsClasicAndSlimCompilationSkins.zip' target='_blank'>Shadows Classic and Slim Skins</a></li>
+      <li><a href='content/ShadowsSkins.zip' target='_blank'>Shadows Skins</a></li>
+      <li><a href='content/camouflage-skin-pack.mcpack' target='_blank'>Camouflage Skin Pack</a></li>
+    </ul>
+  `,
   "spry conquest": "<a href='content/SpryConquest.mcaddon' target='_blank'>Download 'Spry Conquest'</a>",
   "tnt gun": "<a href='content/TntGun.mcaddon' target='_blank'>Download 'TNT Gun'</a>",
   "true weapons": "<a href='content/TrueWeapons.zip' target='_blank'>Download 'True Weapons'</a>",
-  "camouflage skin": "<a href='content/camouflage-skin-pack.mcpack' target='_blank'>Download 'Camouflage Skin Pack'</a>",
   "mods": `
     <p>Here are some mods you can try:</p>
     <ul>
