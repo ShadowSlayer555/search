@@ -91,7 +91,8 @@ const contentMap = {
       <li><a href='content/TntGun.mcaddon' target='_blank'>TNT Gun</a></li>
       <li><a href='content/TrueWeapons.zip' target='_blank'>True Weapons</a></li>
     </ul>
-  `
+  `,
+  "Web": "Here are some of ShadowSlayer555's other websites, <a href='https://shadowslayer555.github.io/MCdoc/' target='_blank'>for ShadowSlayer555's Mods click here.</a>"
 };
 
 function getBotResponse(input) {
