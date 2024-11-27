@@ -95,18 +95,13 @@ const contentMap = {
 function getBotResponse(input) {
   input = input.toLowerCase(); // Normalize input for case insensitivity
 
-  let bestMatch = null;
-  let bestDistance = Infinity;
-
+  // Iterate through contentMap keys to check for keyword matches
   for (const key in contentMap) {
-    const distance = levenshteinDistance(input, key);
-    if (distance < bestDistance && distance <= 3) { // Allow minor typos (distance <= 3)
-      bestMatch = key;
-      bestDistance = distance;
+    if (input.includes(key)) {
+      return contentMap[key];
     }
   }
 
-  return bestMatch
-    ? contentMap[bestMatch]
-    : "Sorry, I couldn't find anything related to your query. Try asking about specific mods or resource packs!";
+  // If no match is found
+  return "Sorry, I couldn't find anything related to your query. Try asking about specific mods or resource packs!";
 }
