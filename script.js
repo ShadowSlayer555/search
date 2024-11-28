@@ -107,13 +107,4 @@ function getBotResponse(input) {
   }
 
 // If no match is found
-return `
-  <p>Sorry, I couldn't find anything related to your query. Try asking about specific mods or resource packs.</p>
-  <p>Here are some popular categories you can try:</p>
-  <ul>
-    <li><strong>magic</strong></li>
-    <li><strong>guns</strong></li>
-    <li><strong>skins</strong></li>
-    <li><strong>mods</strong></li>
-  </ul>
-`;
+return "Sorry, I couldn't find anything related to your query. Here are some popular categories you can try: <ul><li>magic</li><li>guns</li><li>skins</li><li>mods</li></ul>";
