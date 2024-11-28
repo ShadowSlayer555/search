@@ -1,19 +1,28 @@
 const chatBox = document.getElementById("chat-box");
 
 function sendMessage() {
-  const userInput = document.getElementById("user-input").value;
+  console.log("sendMessage called"); // Debugging log
 
-  if (!userInput) return;
+  const userInputElement = document.getElementById("user-input");
+  const userInput = userInputElement ? userInputElement.value : null;
+
+  if (!userInput) {
+    console.log("No user input provided or input element missing");
+    return;
+  }
+
+  console.log("User input:", userInput);
 
   // Display user message
   displayMessage(userInput, "user-message");
 
   // Clear input
-  document.getElementById("user-input").value = "";
+  userInputElement.value = "";
 
   // Simulate AI response
   setTimeout(() => {
     const botResponse = getBotResponse(userInput);
+    console.log("Bot response:", botResponse);
     displayMessage(botResponse, "bot-message");
   }, 1000);
 }
@@ -69,14 +78,12 @@ const contentMap = {
   "end": "<a href='content/BabyEnderDragon.mcaddon' target='_blank'>Download 'Baby Ender Dragon'</a>",
   "wands": "<a href='content/ElementalWands.zip' target='_blank'>Download 'Elemental Wands'</a>",
   "mob": "<a href='content/MobVoteLosers.mcaddon' target='_blank'>Download 'Mob Vote Losers'</a>",
-  "skins": `
-    <p>Here are some skin packs you can try:</p>
+  "skins": `Here are some skin packs you can try:
     <ul>
       <li><a href='content/ShadowsClasicAndSlimCompilationSkins.zip' target='_blank'>Shadows Classic and Slim Skins</a></li>
       <li><a href='content/ShadowsSkins.zip' target='_blank'>Shadows Skins</a></li>
       <li><a href='content/camouflage-skin-pack.mcpack' target='_blank'>Camouflage Skin Pack</a></li>
-    </ul>
-  `,
+    </ul>`,
   "creatures": "<a href='content/SpryConquest.mcaddon' target='_blank'>Download 'Spry Conquest'</a>",
   "tnt": "<a href='content/TntGun.mcaddon' target='_blank'>Download 'TNT Gun'</a>",
   "weapons": "<a href='content/TrueWeapons.zip' target='_blank'>Download 'True Weapons'</a>",
@@ -91,21 +98,29 @@ const contentMap = {
       <li><a href='content/SpryConquest.mcaddon' target='_blank'>Spry Conquest</a></li>
       <li><a href='content/TntGun.mcaddon' target='_blank'>TNT Gun</a></li>
       <li><a href='content/TrueWeapons.zip' target='_blank'>True Weapons</a></li>
-    </ul>
-  `,
+    </ul>`,
   "web": "Check out some of ShadowSlayer555's other websites: <a href='https://shadowslayer555.github.io/MCdoc/' target='_blank'>Explore ShadowSlayer555's best mod compilations</a> or <a href='https://shadowslayer555.github.io/AllMods/' target='_blank'>browse all of my mods here</a>."
 };
 
 function getBotResponse(input) {
   input = input.toLowerCase(); // Normalize input for case insensitivity
+  console.log("Input received by bot:", input); // Debugging log
 
   // Iterate through contentMap keys to check for keyword matches
   for (const key in contentMap) {
     if (input.includes(key)) {
+      console.log("Found match for keyword:", key); // Debugging log
       return contentMap[key];
     }
   }
 
-// If no match is found
- return "Sorry, I couldn't find anything related to your query. Here are some popular categories you can try: <ul><li>magic</li><li>guns</li><li>skins</li><li>mods</li></ul>";
+  // If no match is found
+  return `
+    Sorry, I couldn't find anything related to your query. Here are some popular categories you can try:
+    <ul>
+      <li>magic</li>
+      <li>guns</li>
+      <li>skins</li>
+      <li>mods</li>
+    </ul>`;
 }
