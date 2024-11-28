@@ -87,6 +87,8 @@ const contentMap = {
   "creatures": "<a href='content/SpryConquest.mcaddon' target='_blank'>Download 'Spry Conquest'</a>",
   "tnt": "<a href='content/TntGun.mcaddon' target='_blank'>Download 'TNT Gun'</a>",
   "weapons": "<a href='content/TrueWeapons.zip' target='_blank'>Download 'True Weapons'</a>",
+  "web": "Check out some of ShadowSlayer555's other websites: <a href='https://shadowslayer555.github.io/MCdoc/' target='_blank'>Explore ShadowSlayer555's best mod compilations</a> or <a href='https://shadowslayer555.github.io/AllMods/' target='_blank'>browse all of my mods here</a>.",
+  "kill": "This is a mod that will add a scoreboard to every player that tracks kills <li><a href='content/DeathCounter.mcaddon' target='_blank'>Download Here</a></li>",
   "mods": `
     <p>Here are some mods you can try:</p>
     <ul>
@@ -98,8 +100,7 @@ const contentMap = {
       <li><a href='content/SpryConquest.mcaddon' target='_blank'>Spry Conquest</a></li>
       <li><a href='content/TntGun.mcaddon' target='_blank'>TNT Gun</a></li>
       <li><a href='content/TrueWeapons.zip' target='_blank'>True Weapons</a></li>
-    </ul>`,
-  "web": "Check out some of ShadowSlayer555's other websites: <a href='https://shadowslayer555.github.io/MCdoc/' target='_blank'>Explore ShadowSlayer555's best mod compilations</a> or <a href='https://shadowslayer555.github.io/AllMods/' target='_blank'>browse all of my mods here</a>."
+    </ul>`
 };
 
 function getBotResponse(input) {
