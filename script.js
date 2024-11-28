@@ -92,7 +92,8 @@ const contentMap = {
       <li><a href='content/TrueWeapons.zip' target='_blank'>True Weapons</a></li>
     </ul>
   `,
-  "web": "Check out some of ShadowSlayer555's other websites: <a href='https://shadowslayer555.github.io/MCdoc/' target='_blank'>Explore ShadowSlayer555's best mod compilations</a> or <a href='https://shadowslayer555.github.io/AllMods/' target='_blank'>browse all of my mods here</a>."
+  "web": "Check out some of ShadowSlayer555's other websites: <a href='https://shadowslayer555.github.io/MCdoc/' target='_blank'>Explore ShadowSlayer555's best mod compilations</a> or <a href='https://shadowslayer555.github.io/AllMods/' target='_blank'>browse all of my mods here</a>.",
+  "creator": "Here are the skins of the content creators: <ul><li><a href='content/ShadowSlayer555%27s%20skin.mcpack' target='_blank'>ShadowSlayer555's Skin Pack</a></li><li><a href='content/JarLu252_20%27s%20skin.mcpack' target='_blank'>JarLu252_20's Skin Pack</a></li></ul>"
 };
 
 function getBotResponse(input) {
