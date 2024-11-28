@@ -107,4 +107,5 @@ function getBotResponse(input) {
   }
 
 // If no match is found
-return "Sorry, I couldn't find anything related to your query. Here are some popular categories you can try: <ul><li>magic</li><li>guns</li><li>skins</li><li>mods</li></ul>";
+ return "Sorry, I couldn't find anything related to your query. Here are some popular categories you can try: <ul><li>magic</li><li>guns</li><li>skins</li><li>mods</li></ul>";
+}
