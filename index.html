@@ -61,6 +61,16 @@
       cursor: pointer;
       border-radius: 0 5px 5px 0;
     }
+    .notice {
+      background-color: #ffeb3b;
+      padding: 15px;
+      text-align: center;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .notice p {
+      margin: 5px 0;
+    }
   </style>
 </head>
 <body>
@@ -68,6 +78,17 @@
     <h1>Minecraft Education Content Hub</h1>
     <p>Get mods, resource packs, and more with the help of our bot!</p>
   </header>
+  
+  <div class="notice">
+    <p>If any mods don't work as expected, try using them in one of the experimental worlds. These worlds are set to experimental mode to allow the mods to function properly. You can download the worlds here:</p>
+    <ul>
+      <li><a href="content/ExperimentalInfiniteWorld.mcworld" target="_blank">Download Experimental Infinite World</a></li>
+      <li><a href="content/ExperimentalFlatWorld.mcworld" target="_blank">Download Experimental Flat World</a></li>
+    </ul>
+    <p>If the chat starts scrolling command feedback, use the following command in-game to stop it:</p>
+    <pre>/gamerule commandfeedback false</pre>
+  </div>
+
   <div class="container">
     <h2>Chat with bot</h2>
     <div class="chat-box" id="chat-box"></div>
@@ -76,6 +97,7 @@
       <button onclick="sendMessage()">Send</button>
     </div>
   </div>
+  
   <script src="script.js"></script>
 </body>
 </html>
