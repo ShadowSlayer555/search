@@ -89,6 +89,7 @@ const contentMap = {
   "weapons": "<a href='content/TrueWeapons.zip' target='_blank'>Download 'True Weapons'</a>",
   "web": "Check out some of ShadowSlayer555's other websites: <a href='https://shadowslayer555.github.io/MCdoc/' target='_blank'>Explore ShadowSlayer555's best mod compilations</a> or <a href='https://shadowslayer555.github.io/AllMods/' target='_blank'>browse all of my mods here</a>.",
   "kill": "This is a mod that will add a scoreboard to every player that tracks kills <li><a href='content/DeathCounter.mcaddon' target='_blank'>Download Here</a></li>",
+  "edit": "This is a world edit mod that will change the textures and functions of ingame items to help you edit your world. <li><a href='content/WorldEditOnePointThree.mcaddon' target='_blank'>Download Here</a></li>",
   "mods": `
     <p>Here are some mods you can try:</p>
     <ul>
