@@ -74,6 +74,7 @@ function levenshteinDistance(a, b) {
 const contentMap = {
   "creator": "Here are the skins of the content creators: <ul><li><a href='content/ShadowSlayer555%27s%20skin.mcpack' target='_blank'>ShadowSlayer555's Skin Pack</a></li><li><a href='content/JarLu252_20%27s%20skin.mcpack' target='_blank'>JarLu252_20's Skin Pack</a></li></ul>",
   "magic": "<a href='content/AMagicWay.zip' target='_blank'>Download 'A Magic Way'</a>",
+  "all": "Keywords: creator, magic, guns, end, wands, mob, skins, creatures, tnt, weapons, web, kill, edit, mods",
   "guns": "<a href='content/ActualGuns_3D_1.8.1.mcaddon' target='_blank'>Download 'Actual Guns 3D'</a>",
   "end": "<a href='content/BabyEnderDragon.mcaddon' target='_blank'>Download 'Baby Ender Dragon'</a>",
   "wands": "<a href='content/ElementalWands.zip' target='_blank'>Download 'Elemental Wands'</a>",
